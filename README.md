@@ -54,3 +54,13 @@ kafka-console-producer.sh --broker-list <ip>:<port> --topic my-topic
 
 kafka-console-consumer.sh --bootstrap-server <ip>:<port> --topic my-topic --from-beginning
 ```
+
+* Create a kafka user
+```
+kubectl create -n my-kafka-project -f strimzi/examples/user/kafka-user.yaml
+```
+
+
+
+
+
